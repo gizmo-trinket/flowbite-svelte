@@ -49,6 +49,7 @@
     purple: 'text-white bg-purple-700 hover:bg-purple-800 dark:bg-purple-600 dark:hover:bg-purple-700',
     red: 'text-white bg-red-700 hover:bg-red-800 dark:bg-red-600 dark:hover:bg-red-700',
     yellow: 'text-white bg-yellow-400 hover:bg-yellow-500 ',
+    white: 'text-white bg-transparent hover:bg-white/10',
     none: ''
   };
 
@@ -62,6 +63,7 @@
     purple: 'text-purple-900 bg-purple-400 dark:bg-purple-500 shadow-purple-700 dark:shadow-purple-800 shadow-inner',
     red: 'text-red-900 bg-red-400 dark:bg-red-500 shadow-red-700 dark:shadow-red-800 shadow-inner',
     yellow: 'text-yellow-900 bg-yellow-300 dark:bg-yellow-400 shadow-yellow-500 dark:shadow-yellow-700 shadow-inner',
+    white: 'text-white bg-transparent dark:bg-white/10 shadow-white/10 dark:shadow-white/50 shadow-inner',
     none: ''
   };
 
@@ -75,6 +77,7 @@
     purple: 'focus-within:ring-purple-300 dark:focus-within:ring-purple-900',
     red: 'focus-within:ring-red-300 dark:focus-within:ring-red-900',
     yellow: 'focus-within:ring-yellow-300 dark:focus-within:ring-yellow-900',
+    white: 'focus-within:ring-white dark:focus-within:ring-white',
     none: ''
   };
 
@@ -88,6 +91,7 @@
     purple: 'shadow-purple-500/50 dark:shadow-purple-800/80',
     red: 'shadow-red-500/50 dark:shadow-red-800/80 ',
     yellow: 'shadow-yellow-500/50 dark:shadow-yellow-800/80 ',
+    white: 'shadow-white/50 dark:shadow-white/80 ',
     none: ''
   };
 
@@ -101,6 +105,7 @@
     purple: 'text-purple-700 hover:text-white border border-purple-700 hover:bg-purple-800 dark:border-purple-400 dark:text-purple-400 dark:hover:text-white dark:hover:bg-purple-500',
     red: 'text-red-700 hover:text-white border border-red-700 hover:bg-red-800 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600',
     yellow: 'text-yellow-400 hover:text-white border border-yellow-400 hover:bg-yellow-500 dark:border-yellow-300 dark:text-yellow-300 dark:hover:text-white dark:hover:bg-yellow-400',
+    white: 'text-white hover:text-white/75 border border-white hover:bg-white/25 dark:border-white/90 dark:text-white dark:hover:text-white/75 dark:hover:bg-white/25',
     none: ''
   };
 
@@ -130,7 +135,7 @@
     outline && color === 'dark' && (group ? (checked ? 'bg-gray-900 border-gray-800 dark:border-white dark:bg-gray-600' : 'dark:text-white border-gray-800 dark:border-white') : 'dark:text-gray-400 dark:border-gray-700'),
     coloredFocusClasses[color],
     hasBorder() && group && '[&:not(:first-child)]:-ms-px',
-    group ? (pill && 'first:rounded-s-full last:rounded-e-full') || 'first:rounded-s-lg last:rounded-e-lg' : (pill && 'rounded-full') || 'rounded-lg',
+    group ? (pill && 'first:rounded-s-full last:rounded-e-full') || 'first:rounded-none last:rounded-none' : (pill && 'rounded-full') || 'rounded-none',
     shadow && 'shadow-lg',
     shadow && coloredShadowClasses[color],
     disabled && 'cursor-not-allowed opacity-50',
