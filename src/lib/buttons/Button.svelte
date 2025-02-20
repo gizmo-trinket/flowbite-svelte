@@ -135,7 +135,7 @@
     outline && color === 'dark' && (group ? (checked ? 'bg-gray-900 border-gray-800 dark:border-white dark:bg-gray-600' : 'dark:text-white border-gray-800 dark:border-white') : 'dark:text-gray-400 dark:border-gray-700'),
     coloredFocusClasses[color],
     hasBorder() && group && '[&:not(:first-child)]:-ms-px',
-    group ? (pill && 'first:rounded-s-full last:rounded-e-full') || 'first:rounded-none last:rounded-none' : (pill && 'rounded-full') || 'rounded-none',
+    group ? (pill && 'first:rounded-s-lg last:rounded-e-lg') || 'first:rounded-none last:rounded-none' : (pill && 'rounded-lg') || 'rounded-none',
     shadow && 'shadow-lg',
     shadow && coloredShadowClasses[color],
     disabled && 'cursor-not-allowed opacity-50',
